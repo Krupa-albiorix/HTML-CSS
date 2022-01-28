@@ -1,0 +1,221 @@
+/*   CSS Element     */
+p {
+    text-align: center;
+    color: red;
+}
+
+/*  CSS id    */
+#p {
+    text-align: center;
+    color: blueviolet;
+}
+
+/*  CSS class   */
+.p {
+    text-align: center;
+    color: cadetblue;
+}
+
+/*  CSS class name is center & it's element is p    */
+p.center {
+    text-align: justify;
+    color: royalblue;
+}
+
+/*  CSS Universal Selector  */
+* {
+    text-align: center;
+    color: rebeccapurple;
+}
+
+/*  CSS Grouping Selector   */
+h1 ,h2, p {
+    text-align: center;
+    color: red;
+}
+
+/* Margin example */
+div {
+    border: 1px solid black;
+    margin-top: 100px;
+    margin-right: 150px;
+    margin-bottom: 100px;
+    margin-left: 200px;
+}
+p {
+    border: inherit;
+    margin: 25px 50px 75px 100px;
+    margin: 25px 70px 65px;
+    margin: 20px 60px;
+    margin: 50px;
+}
+/* Margin collapse */
+h1 {
+    margin: 0 0 50px 0;
+}
+h2 {
+    margin: 20px 0 0 0;
+}
+
+/* Margin & Pedding properties are same */
+
+h3 {
+    width: 200px;
+    padding: 20px 70px 80px 40px;
+    box-sizing: border-box;
+}
+
+/* Box Model Example */
+div {
+    width: 300px;
+    /* border: 15px solid green; */
+    padding: 50px;
+    margin: 20px;
+}
+
+/* Link Example */
+a:link {
+    color: green;
+}
+a:visited {
+    color: greenyellow;
+}
+a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+a:active {
+    color: blue;
+}
+
+/* List Example */
+ul.a {
+    list-style-position: outside;
+}
+ul.b {
+    list-style-position: inside;
+}
+ol {
+    background: #ff9999;
+    padding: 20px;
+}
+ul {
+    background: #3399ff;
+    padding: 20px;
+}
+ol li {
+    background: #ffe5e5;
+    padding: 5px;
+    margin-left: 35px;
+}
+ul li {
+    background: #cce5ff;
+    margin: 5px;
+}
+ul.c {
+    list-style-type: circle;
+}
+ul.d {
+    list-style-type: square;
+}
+ol.e {
+    list-style-type: upper-roman;
+}
+ol.f {
+    list-style-type: lower-alpha;
+}
+
+/* Table Example */
+table, td, th {
+    width: 100%;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+td {
+    height: 50px;
+    vertical-align: bottom;
+}
+
+/* Position Example */
+div.static {
+    position: static;
+    border: 3px solid #73AD21;
+}
+div.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+}
+div.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #73AD21;
+}
+div.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+}
+div.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: green;
+    border: 2px solid #4CAF50;
+}
+
+/* Z-index Example */
+.container {
+    position: relative;
+}
+.black-box {
+    position: relative;
+    z-index: 1;
+    border: 2px solid black;
+    height: 100px;
+    margin: 30px;
+}
+.gray-box {
+    position: absolute;
+    z-index: 3;
+    background: lightgray;
+    height: 60px;
+    width: 70%;
+    left: 50px;
+    top: 50px;
+}
+.green-box {
+    position: absolute;
+    z-index: 2;
+    background: lightgreen;
+    width: 35%;
+    left: 270px;
+    top: -15px;
+    height: 100px;
+}
+
+/* Float Example */
+div {
+    border: 3px solid #4CAF50;
+    padding: 5px;
+}
+.img1 {
+    float: right;
+}
+.img2 {
+    float: right;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
