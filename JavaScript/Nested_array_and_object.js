@@ -10,10 +10,10 @@ const myObj = {
     ]
 }
 console.log(myObj.cars);
-for (let i in myObj.cars) {
-    x += myObj.cars[i].name;
-    for (let j in myObj.cars[i].models) { 
-        x += myObj.cars[i].models[j];
-    }
-}
-console.log(x);
+// for (let i in myObj.cars) {
+//     x += myObj.cars[i].name;
+//     for (let j in myObj.cars[i].models) { 
+//         x += myObj.cars[i].models[j];
+//     }
+// }
+// console.log(x);
