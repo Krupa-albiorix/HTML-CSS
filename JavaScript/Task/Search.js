@@ -1,3 +1,5 @@
+// Searching / Filtering
+
 const fruits = ["Banana", "Kiwi", "Orange", "Apple", "Pinapple", "Apple"];
 let first = fruits[0];
 console.log(first);

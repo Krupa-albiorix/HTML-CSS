@@ -1,3 +1,5 @@
+// Coma Seprated String to Array
+
 var str = "a,b,c,d";
 let myarray = str.split(",");
 let myarray1 = [...str];

@@ -1,8 +1,10 @@
+// Replace key value
+
 const obj = {
     job : "Programer", 
     name : "Krupa"
 };
-obj.designer = "Programer";
+obj.designation = "Programer";
 console.log(obj);
 
 delete obj.job;

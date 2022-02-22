@@ -1,15 +1,13 @@
-var number = 140;
+// Number to Array : 140 => [1,2,3,4,5,6...140]
 
+var number = 140;
+var arr = [];
 for (let i = 1; i <= number; i++) {
     var num = i;
     var myarr = String(num).split(" ").map((num)=>{
         return Number(num)
     })
-    // var myarr1 = myarr.concat(myarr.length+1);
-    console.log(myarr);
+    arr.push(...myarr);
+    // console.log(arr);
 }
-
-// for (let i = 1; i <= number; i++) {
-//     var num = i.concat(i+1);
-//     console.log(num);
-// }
+console.log(arr);
